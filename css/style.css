@@ -1,0 +1,421 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*FONTS*/
+	@font-face{
+		font-family: 'alpo';
+		src: url('../fonts/alpo.ttf');
+	}
+	@font-face{
+		font-family: 'core';
+		src: url('../fonts/core.otf');
+	}
+	@font-face{
+		font-family: 'core-bold';
+		src: url('../fonts/core-bold.otf');
+	}
+	@font-face{
+		font-family: 'core-semi';
+		src: url('../fonts/core-semi.otf');
+	}
+	@font-face{
+		font-family: 'fancy-feast';
+		src: url('../fonts/fancy-feast.ttf');
+	}
+/*DISPLAY NONE*/
+	#marquette-guitar,
+	#marquette-midnight-burst-images,
+	#zipper-blue-white-images,
+	#zipper-guitar{
+		display: none;
+	}
+/*BODY*/
+	body{
+		background-color: #f5f5f5;
+		background-image: url("https://www.transparenttextures.com/patterns/farmer.png");
+	}
+/*HEADER*/
+	header{
+		left: 0;
+		margin: 0 auto;
+		max-width: 1500px;
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 100%;
+		z-index: 100;
+	}
+	.header-container{
+		background-color: #fff;
+		box-shadow: 0 4px 3px #000;
+		display: flex;
+		justify-content: space-between;
+		padding: 2px 2px 0 2px;
+		position: relative;
+		width: calc(100% - 4px);
+	}
+	.header-container a:hover{
+		cursor: pointer;
+	}
+	#lockhorn-logo-main{
+		width: 160px;
+	}
+	#lockhorn-logo-marquette{
+		display: none;
+		width: 62px;
+	}
+	.header-left img{
+		max-width: 100%;
+	}
+	.header-right{
+		align-items: flex-end;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		margin-right: 5px;
+	}
+	.header-right a{
+		color: #000;
+		font-family: 'core-semi', sans-serif;
+		text-decoration: none;
+	}
+	.header-links a,
+	.header-social a{
+		margin-left: 10px;
+	}
+	.header-links .header-link-thin{
+		font-family: 'core', sans-serif;
+	}
+/*GUITAR MAIN BOXES*/
+	.guitar-main-boxes{
+		align-items: center;
+		display: flex;
+		height: 100vh;
+		justify-content: space-evenly;
+		margin: 50px auto 0 auto;
+		max-width: 1500px;
+		width: 100%;
+	}
+	.guitar-main-image{
+		position: relative;
+	}
+	.guitar-main-image:hover{
+		cursor: pointer;
+	}
+	.guitar-background-logo{
+		align-items: center;
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		margin: 0 auto;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+	/*.marquette{
+		margin-top: 65px;
+	}*/
+	.marquette .guitar-main-image img{
+		transition: .3s;
+		width: 205px;
+	}
+	/*.zipper{
+		margin-top: 65px;
+	}*/
+	.zipper .guitar-main-image img{
+		transition: .3s;
+		width: 226px;
+	}
+	.guitar-background-logo img{
+		padding-bottom: 200px;
+	}
+	#marquette-background-logo{
+		font-family: 'fancy-feast', sans-serif;
+		font-size: 44px;
+		text-align: center;
+	}
+	#marquette-background-logo p{
+		padding-bottom: 200px;
+		text-shadow: 1px 1px #fff, -1px -1px #fff, -1px 1px #fff, 1px -1px #fff;
+		transition: .3s;
+	}
+	#zipper-background-logo{
+		margin-right: 30px;
+		transition: .3s;
+	}
+	#zipper-background-logo-img{
+		margin-left: -30px;
+	}
+	.guitar-hover{
+		transform: scale(1.1);
+		transition: .3s;
+	}
+	.logo-hover{
+		opacity: .5;
+		font-size: 32px;
+		padding-top: 20px;
+		transition: .3s;
+		z-index: -1;
+	}
+	.logo-hover-zipper{
+		opacity: .5;
+		padding-bottom: 250px !important;
+		transition: .3s;
+		transform: scale(0.75);
+		z-index: -1;
+	}
+
+/***GUITAR SPECIFIC***/
+	.guitar-selected{
+		display: flex;
+		height: 100vh;
+		justify-content: flex-start;
+		max-width: 1500px;
+		width: 100%;
+	}
+	.guitar-selected-box{
+		max-width: 50%;
+		width: 100%;
+	}
+/*GUITAR DETAILS*/
+	.guitar-details-section{
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0 auto;
+		padding: 0 40px;
+		position: absolute;
+		text-align: center;
+		top: 70px;
+		width: 100%;
+	}
+	.selected-logo h2{
+		font-size: 60px;
+		font-family: 'fancy-feast', sans-serif;
+		text-shadow: 1px 1px #fff, -1px -1px #fff, -1px 1px #fff, 1px -1px #fff,
+					 2px 2px #fff, -2px -2px #fff, -2px 2px #fff, 2px -2px #fff;
+
+	}
+	.guitar-details-section p{
+		font-family: 'core', sans-serif;
+		font-size: 18px;
+		line-height: 1.5;
+	}
+	#marquette-selected .selected-logo{
+		margin: 20px 0;
+	}
+	#zipper-selected .selected-logo{
+		margin-bottom: 30px;
+		max-width: 400px;
+	}
+	.selected-logo img{
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+/*GUITAR LARGE IMAGE*/
+	.guitar-large-image{
+		position: fixed;
+		right: 0;
+		top: 55px;
+	}
+	#marquette-large-image{
+		top: 0;
+	}
+	.guitar-large-image img{
+		height: 100vh;
+		width: 100%;
+	}
+/*SELECT COLOR*/
+	.color-select{
+		align-items: center;
+		display: flex;
+		justify-content: space-evenly;
+		width: 40%;
+	}
+	.color-circle{
+		border: 1px solid #000;
+		border-radius: 45px;
+		box-shadow: 0 2px 5px #000;
+		height: 30px;
+		margin-top: 50px;
+		overflow: hidden;
+		position: relative;
+		width: 30px;
+	}
+	.color-circle:hover{
+		cursor: pointer;
+	}
+	.start-color{
+		border-width: 3px;
+	}
+	.color-circle-select{
+		border-width: 3px;
+	}
+	#marquette-sunburst-color{
+		background-image: radial-gradient(#F89407, #CE5800, #1D0408);
+	}
+	#marquette-midnight-burst-color{
+		background-image: url(../media/marquette/marquette-midnight-burst/marquette-midnight-burst.png);
+		background-size: cover;
+	}
+	#zipper-white-wood-blue-color{
+		background-image: url(../media/zipper/zipper-white/zipper-white-wood-blue.png);
+	}
+	.color-circle-overlay{
+		height: 30px;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 30px;
+	}
+	#zipper-white-wood-blue-color .color-circle-overlay{
+		background-image: linear-gradient(to right, transparent 50%, #3E6B92 50%);
+	}
+	#zipper-blue-white-color{
+		background-image: linear-gradient(to right, #03506A 50%, #fff 50%);
+	}
+/*GUITAR THUMB*/
+	.guitar-gallery{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 30px 0 100px 0;
+	}
+	.guitar-thumb{
+		border: 1px solid #000;
+		box-shadow: 0 5px 10px #000;
+		height: 100px;
+		margin: 10px;
+		max-width: 100px;
+		overflow: hidden;
+		width: 100%;
+	}
+	.guitar-thumb-child{
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 150px 150px;
+		height: 100%;
+		max-height: 100%;
+		max-width: 100%;
+		transition: .3s;
+		width: 100%;
+	}
+	.guitar-thumb-child img{
+		max-width: 100px;
+		transition: .3s;
+	}
+	.guitar-thumb-hover /*DISABLE MOBILE*/{
+		transform: scale(1.6);
+		transition: .3s;
+	}
+	.fancybox-thumbs__list a:before{
+		border-color: transparent !important;
+	}
+	.fancybox-thumbs__list a.fancybox-thumbs-active:before{
+		border-color: #E33B2B !important;
+	}
+/*SPECS*/
+	.specs{
+		margin-bottom: 50px;
+	}
+	.specs h3{
+		font-family: 'core-bold', sans-serif;
+		font-size: 56px;
+		margin-bottom: 30px;
+		text-shadow: 1px 1px #fff, -1px -1px #fff, -1px 1px #fff, 1px -1px #fff,
+					 2px 2px #fff, -2px -2px #fff, -2px 2px #fff, 2px -2px #fff;
+	}
+	.specs p{
+		font-family: 'core', sans-serif;
+		font-size: 18px;
+		margin: 5px 0;
+		text-align: left;
+	}
+	.specs span{
+		font-family: 'core-semi', sans-serif;
+		text-transform: uppercase;
+	}
+/*CONTACT- QUOTE FORM*/
+	.contact-form{
+		max-width: 100%;
+		width: 100%;
+	}
+	.contact-form h4{
+		font-family: 'core-bold', sans-serif;
+		font-size: 56px;
+		margin-bottom: 30px;
+	}
+	#marquette-contact-form h4{
+		font-size: 50px;
+	}
+	.contact-form p{
+		font-family: 'core-semi', sans-serif;
+		font-size: 18px;
+		text-align: left;
+		width: 350px;
+	}
+	.contact-form select{
+		background-color: #fff;
+		border: 1px solid #000;
+		
+		box-sizing: content-box;
+		font-size: 18px;
+		font-family: 'core', sans-serif;
+		padding: 0 5px;
+		width: 100%;
+	}
+	.contact-form option span{
+		font-size: 36px !important;
+	}
+	.contact-form textarea{
+		border: 1px solid #000;
+		border-radius: 5px;
+		
+		font-size: 18px;
+		font-family: 'core', sans-serif;
+		height: 60px;
+		max-width: calc(100% - 237px);
+		padding: 5px;
+		width: 100%;
+	}
+	.form-select-box{
+		align-items: center;
+		display: flex;
+		margin: 10px;
+	}
+	.form-select-box span{
+		color: #e33b2b;
+		font-size: 14px;
+	}
+	.estimated-total-box p{
+		width: 225px;
+	}
+	.estimated-total-number{
+		font-family: 'core-bold', sans-serif;
+		font-size: 18px;
+	}
+	.form-submit-buttons{
+		justify-content: flex-end;
+		margin-left: 230px;
+		
+	}
+	.form-submit-buttons-box{
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+	}
+	.submit-buttons{
+		border: 1px solid #000;
+		box-shadow: 0 2px 5px #000;
+		color: #000;
+		font-family: 'core-semi', sans-serif;
+		font-size: 18px;
+		padding: 2px 0;
+		width: 100px;
+	}
+
+
+
