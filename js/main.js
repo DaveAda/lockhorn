@@ -12,6 +12,7 @@ $guitarmainboxes = $('.guitar-main-boxes');
 $homelink = $('#home-link');
 $lockhornlogomain = $('#lockhorn-logo-main');
 $lockhornlogomarquette = $('#lockhorn-logo-marquette');
+$lockhornlogozipper = $('#lockhorn-logo-zipper');
 $marquette = $('.marquette');
 $marquettelink = $('#marquette-link');
 $marquetteguitar = $('#marquette-guitar');
@@ -20,80 +21,72 @@ $zipperlink = $('#zipper-link');
 $zipperguitar = $('#zipper-guitar');
 
 $homelink.click(function(){
+  $('body').addClass('home-body');
+  $('body').removeClass('marquette-body');
+  $('body').removeClass('zipper-body');
   $homelink.css({'font-family':'core-bold, sans-serif'});
-  $guitarmainboxes.fadeIn(200);
+  $guitarmainboxes.fadeIn(500);
   $lockhornlogomain.fadeIn(500);
   $lockhornlogomarquette.hide();
-  $zipperguitar.fadeOut(100);
-  $marquetteguitar.fadeOut(100);
+  $lockhornlogozipper.hide();
+  $zipperguitar.hide();
+  $marquetteguitar.hide();
   $zipperlink.css('font-family', 'core, sans-serif');
   $marquettelink.css('font-family', 'core, sans-serif');
 
 /*GUITAR SELECT*/
 });
 $marquette.click(function(){
-  $guitarmainboxes.fadeOut(100);
+  $('body').addClass('marquette-body'); 
+  $('body').removeClass('home-body');
+  $('body').removeClass('zipper-body');
+  $guitarmainboxes.hide();
   $homelink.css({'font-family':'core, sans-serif'});
   $lockhornlogomain.hide();
   $lockhornlogomarquette.fadeIn(500);
+  $lockhornlogozipper.hide();
   $marquetteguitar.fadeIn(500);
   $marquettelink.css('font-family', 'core-bold, sans-serif');
-  $zipperguitar.fadeOut(100);
+  $zipperguitar.hide();
   $zipperlink.css('font-family', 'core, sans-serif');
 });
 
 $zipper.click(function(){
-  $guitarmainboxes.fadeOut(100);
+  $('body').addClass('zipper-body'); 
+  $('body').removeClass('home-body');
+  $('body').removeClass('marquette-body');
+  $guitarmainboxes.hide();
+  $lockhornlogomain.hide();
+  $lockhornlogomarquette.hide();
+  $lockhornlogozipper.fadeIn(500);
   $homelink.css({'font-family':'core, sans-serif'});
-  $marquetteguitar.fadeOut(100);
+  $marquetteguitar.hide();
   $marquettelink.css('font-family', 'core, sans-serif');
   $zipperguitar.fadeIn(500);
   $zipperlink.css('font-family', 'core-bold, sans-serif');
 });
-/*GUITAR HOVER*/
-$marquette.hover(function(){
-  $('#marquette-guitar-main-image').toggleClass('guitar-hover');
-  $('#marquette-background-logo p').toggleClass('logo-hover');
-});
-$zipper.hover(function(){
-  $('#zipper-guitar-main-image').toggleClass('guitar-hover');
-  $('#zipper-background-logo-img').toggleClass('logo-hover-zipper');
-});
 /*ZIPPER COLOR SELECT*/
-  $marquettemidnightburstimages = $('#marquette-midnight-burst-images');
-  $marquettemidnightburstcolor = $('#marquette-midnight-burst-color');
-  $marquettesunburstcolor = $('#marquette-sunburst-color');
-  $marquettesunburstimages = $('#marquette-sunburst-images');
-  $zipperbluewhitecolor = $('#zipper-blue-white-color');
-  $zipperbluewhiteimages = $('#zipper-blue-white-images');
-  $zipperwhitewoodbluecolor = $('#zipper-white-wood-blue-color');
-  $zipperwhitewoodblueimages = $('#zipper-white-wood-blue-images');
-
-  $marquettemidnightburstcolor.click(function(){
-    $marquettemidnightburstcolor.addClass('color-circle-select');
-    $marquettesunburstcolor.removeClass('start-color');
-    $marquettemidnightburstimages.fadeIn(100);
-    $marquettesunburstimages.fadeOut(100);
+  $("#color-select-zipper").change(function () {
+      if ($(this).val() == "zipper-1") {
+          $("#zipper-white-wood-blue-images").toggle();
+          $("#zipper-blue-white-images").toggle();
+      } else {
+          $("#zipper-white-wood-blue-images").toggle();
+          $("#zipper-blue-white-images").toggle();
+      }
   });
-  $marquettesunburstcolor.click(function(){
-    $marquettesunburstcolor.addClass('color-circle-select');
-    $marquettemidnightburstcolor.removeClass('start-color');
-    $marquettesunburstimages.fadeIn(100);
-    $marquettemidnightburstimages.fadeOut(100);
+/*MARQUETTE COLOR SELECT*/
+  $("#color-select-marquette").change(function () {
+      if ($(this).val() == "marquette-1") {
+          $("#marquette-sunburst-images").toggle();
+          $("#marquette-midnight-burst-images").toggle();
+      } else {
+          $("#marquette-sunburst-images").toggle();
+          $("#marquette-midnight-burst-images").toggle();
+      }
   });
 
-  $zipperbluewhitecolor.click(function(){
-    $zipperbluewhitecolor.addClass('color-circle-select');
-    $zipperwhitewoodbluecolor.removeClass('start-color');
-    $zipperbluewhiteimages.fadeIn(100);
-    $zipperwhitewoodblueimages.fadeOut(100);
-  });
-  $zipperwhitewoodbluecolor.click(function(){
-    $zipperbluewhitecolor.removeClass('color-circle-select');
-    $zipperwhitewoodbluecolor.addClass('start-color');
-    $zipperbluewhiteimages.fadeOut(100);
-    $zipperwhitewoodblueimages.fadeIn(100);
-  });
+  
 /*MARQUETTE THUMBNAILS - BLUE/WHITE*/
   $marquettesunburstthumb1 = $('#marquette-sunburst-thumb-1 img');
   $marquettesunburstthumb2 = $('#marquette-sunburst-thumb-2 img');

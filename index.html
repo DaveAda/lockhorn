@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,13 +10,22 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
 <body>
-<!--HEADER 1-->
-<header>
+<!--HEADER-->
+<header class="header-main">
 	<div class="header-container">
 		<div class="header-left">
-			<img id="lockhorn-logo-main" src="media/logos/zipper-logo-clear.png"/>
-			<img id="lockhorn-logo-marquette" src="media/logos/marquette-logo.png"/>
-
+			<img id="lockhorn-logo-main" src="media/logos/zipper-logo.png"/>
+			<div id="lockhorn-logo-marquette">
+				<div class="lockhorn-logo-marquette-container">
+					<img src="media/logos/marquette-logo.png"/>
+					<p>Lockhorn Instruments</p>
+				</div>
+			</div>
+			<div id="lockhorn-logo-zipper">
+				<div class="lockhorn-logo-zipper-container">
+					<img src="media/logos/zipper-logo.png"/>
+				</div>
+			</div>
 		</div>
 		<div class="header-right">
 			<div class="header-social">
@@ -25,36 +35,26 @@
 			</div>
 			<div class="header-links">
 				<a href="#" class="header-link home" id="home-link">HOME</a>
-				<a class="header-link marquette header-link-thin" id="marquette-link">MARQUETTE</a>
-				<a class="header-link zipper header-link-thin" id="zipper-link">ZIPPER</a>
+				<a href="#" class="header-link marquette header-link-thin" id="marquette-link">MARQUETTE</a>
+				<a href="#" class="header-link zipper header-link-thin" id="zipper-link">ZIPPER</a>
 				<a class="header-link header-link-thin" id="about-link">ABOUT</a>
 				<a class="header-link header-link-thin" id="contact-link">CONTACT</a>
 			</div>
 		</div>
 	</div>
 </header>
-<!--HEADER 2-->
-<!--header>
-	<div class="header-container">
-		<div class="header-left">
-			<div class="header-left-image">
-				<img src="media/misc/nameplate-shadow.png"/>
-				<div class="header-left-logo">
-					<img src="media/logos/zipper-logo-shadow.png"/>
-				</div>
-				<div id="screw-left" class="screw"><img src="media/misc/screw.png"/></div>
-				<div id="screw-right" class="screw"><img src="media/misc/screw.png"/></div>
-			</div>
+<!--HEADER MOBILE-->
+<header class="header-mobile">
+	<div class="header-mobile-container">
+		<div class="header-mobile-logo">
+			<img src="media/logos/zipper-logo.png"/>
 		</div>
-
 	</div>
-</header-->
-<!---->
-
+</header>
 <div class="guitar-main-boxes">
 	<div class="marquette guitars-main">
 		<div class="guitar-main-image">
-			<img id="marquette-guitar-main-image" src="media/marquette/mar-1-2.png"/>
+			<img src="media/marquette/mar-1-2.png"/>
 			<div id="marquette-background-logo" class="guitar-background-logo">
 				<p>Marquette</p>
 			</div>
@@ -62,7 +62,7 @@
 	</div>
 	<div class="zipper guitars-main">
 		<div id="zipper-main-image" class="guitar-main-image">
-			<img id="zipper-guitar-main-image" src="media/zipper/zip-1-2-3.png"/>
+			<img src="media/zipper/zip-1-2-3.png"/>
 				<div id="zipper-background-logo" class="guitar-background-logo">
 				<img id="zipper-background-logo-img" src="media/logos/zipper-text-logo.png"/>
 			</div>
@@ -77,11 +77,19 @@
 					<img src="media/logos/zipper-text-logo.png"/>
 				</div>
 <!--GUITAR BIO-->
-				<h2>Good morning. In less than an hour, aircraft from here will join others from around the world, and you will be launching the largest aerial battle in the history of mankind. [pauses] Mankind. That word should have new meaning for all of us today. We can't be consumed by our petty differences anymore. We will be united in our common interests. Perhaps it's fate that today is the Fourth of July, and you will once again be fighting for our freedom, not from tyranny, oppression, or persecution, but from annihilation. We're fighting for our right to live, to exist. And should we win today, the Fourth of July will no longer be known as an American holiday, but as the day when the world declared in one voice: We will not go quietly into the night! We will not vanish without a fight! We're going to live on! We're going to survive! Today we celebrate our Independence Day!</h2>
+				<p class="bump">The Zipper’s great granddaddy on its mother’s side was a Harmony Stratotone. It’s fraternal grandparents were both (unrelated) Fender Telecaster Thinlines. Talk in town is that it’s got a great uncle that might have been a Gibson Melody Maker.  It hangs out with Danelectros on the weekends. It began life as a cheap guitar approximating a vintage guitar I couldn’t afford to buy. Originally all poplar and Masonite and bargain bin hardware. Along the way I accidentally upgraded every aspect of it. It’s got a 25.5” scale length. Two volumes and one tone knob control the up and downs. You’d have to be really persuasive to get me to add another tone. I’d have to rearrange the whole room for it to fit. It strings across a Gibson style tune-o-matic and then through the body over a tailpiece I came up with.  I should probably patent that thing. I feel like the string-through-edness really helps it sing. “Zip” if you will. It’s built kinda like a strategically hollowed out Oreo cookie.  A top and back plate of matching wood are the cookie. The white stuff is a complementary wood with a four inch wide center block and half inch wide walls. It’s double bound for good looks and speed. At the moment we build them with a mahogany or maple neck but are looking to buck tradition in the future. I’m open to any combination of plates and body woods as well as pickup selection.  Provided of course they look and sound good together. I do, after all, have to put our name on it at the end of the day.
+</p>
 <!--SELECT COLOR-->
 			<div class="color-select">
-				<div id="zipper-white-wood-blue-color" class="color-circle start-color"><div class="color-circle-overlay"></div></div>
-				<div id="zipper-blue-white-color" class="color-circle"><div class="color-circle-overlay"></div></div>
+				<h3 class="bump zipper-headers">ZIPPER GALLERY</h3>
+				<div class="select-a-color bump">
+					<label for="color-select">SELECT A COLOR</label>
+					<select id="color-select-zipper">
+						<option value=" zipper-1">White Wood/Blue</option>
+						<option value=" zipper-2">Blue/White</option>
+					</select>
+					<div id="result"></div>
+				</div>
 			</div>
 <!--ZIPPER GUITAR PHOTO GALLERY - WHITE WOOD/BLUE-->
 	<div id="zipper-white-wood-blue-images">
@@ -325,8 +333,8 @@
 		</div>
 	</div>
 <!--SPECS*-->
-		<div class="specs">
-			<h3>ZIPPER SPECS</h3>
+		<div class="specs bump">
+			<h3 class="zipper-headers">ZIPPER SPECS</h3>
 			<p><span>Center Block Wood </span>Honduran/African Mahogany, Ash, Alder, Walnut, Cedar or Maple. Honestly anything that looks good and will Zip.</p>
 			<p><span>Top and Back Plate Wood </span>complementary wood from the same options. I like to mix. Not always match.</p>
 			<p><span>Neck Wood </span>Historically maple or Mahogany. But I’m open to suggestions.</p>
@@ -344,100 +352,34 @@
 			<p><span>Two volume pots and a single tone pot.</span></p>
 		</div>
 <!--CONTACT FORM-->
-		<div id="zipper-white-wood-blue-contact-form" class="contact-form">
-			<h4>BUILD YOUR ZIPPER</h4>
-			<div id="zipper-white-wood-blue-quote" class="quote-form">
+	<div class="contact-me bump">
+		<h3 class="zipper-headers">INTERESTED IN A ZIPPER?</h3>
+			<div class="contact-me-form">
+				<p>Want to inquire about ordering a LockHorn Marquette or about available custom options? Please reach out to Zach below and he will be in touch with you!</p>
 				<form>
-					<!--ORIENTATION-->
-					<div class="form-select-box">
-						<p>ORIENTATION <span>*</span></p>
-						<select>
-							<option value='0'>Righty</option>
-							<option value='0'>Lefty</option>
-						</select>
-					</div>
-					<!--FRETS-->
-					<div class="form-select-box">
-						<p>FRETS <span>*</span></p>
-						<select>
-							<option value='0'>Fretted</option>
-							<option value='0'>Unlined Fretless (Unlined)</option>
-							<option value="50">Lined Fretless [+50]</option>
-						</select>
-					</div>
-					<!--FINGERBOARD WOOD-->
-					<div class="form-select-box">
-						<p>FINGERBOARD WOOD <span>*</span></p>
-						<select>
-							<option value='0'>Jatoba</option>
-							<option value='50'>Indian Rosewood [+50] [No International Shipping]</option>
-							<option value='100'>Ebony [+100]</option>
-							<option value='0'>Other [Custom Quote]</option>
-						</select>
-					</div>
-					<!--PICKUP-->
-					<div class="form-select-box">
-						<p>PICKUP <span>*</span></p>
-						<select>
-							<option value='0'>Lollar</option>
-							<option value='50'>Not Lollar [+50]</option>
-						</select>
-					</div>
-					<!--FINISH COLOR (BODY AND NECK WILL MATCH UNLESS OTHERWISE SPECIFIED)-->
-					<div class="form-select-box">
-						<p>FINISH COLOR <!--(BODY AND NECK WILL MATCH UNLESS OTHERWISE SPECIFIED)--> <span>*</span></p>
-						<select>
-							<option value='0'>Clear Satin</option>
-							<option value='50'>Red [+50]</option>
-						</select>
-					</div>
-					<!--PICKGUARD (HEAD BADGE WILL MATCH UNLESS OTHERWISE SPECIFIED)-->
-					<div class="form-select-box">
-						<p>PICKGUARD <!--(HEAD BADGE WILL MATCH UNLESS OTHERWISE SPECIFIED)--> <span>*</span></p>
-						<select>
-							<option value='0'>Black</option>
-							<option value='950'>Human Skin [+950]</option>
-						</select>
-					</div>
-					<!--TUNING KEYS-->
-					<div class="form-select-box">
-						<p>TUNING KEYS <span>*</span></p>
-						<select>
-							<option value='0'>Black</option>
-							<option value='950'>Human Bones [+950]</option>
-						</select>
-					</div>
-					<!--SHIPPING-->
-					<div class="form-select-box">
-						<p>SHIPPING <span>*</span></p>
-						<select>
-							<option value='0'>Continental United States</option>
-							<option value='0'>Everywhere Else [Calculated Upon Completion]</option>
-						</select>
-					</div>
-					<!--QUESTIONS, COMMENTS, SPECIAL REQUESTS-->
-					<div class="form-select-box">
-						<p>QUESTIONS, COMMENTS, OR SPECIAL REQUESTS</p>
-						<textarea></textarea>
-					</div>
-					<!--ESTIMATED TOTAL-->
-					<div class="form-select-box estimated-total-box">
-						<p>ESTIMATED TOTAL</p>
-						<div id='zipper-white-wood-blue-contact-form-sum' class="estimated-total-number">$2000</div>
-					</div>
-					<!--SUBMIT BUTTONS-->
-					<div class="form-select-box form-submit-buttons">
-						<div class="form-submit-buttons-box">
-							<div onClick="submitForm()"><input class="submit-buttons" type="submit" name="submit" value="SUBMIT"></div>
-							<div><input class="submit-buttons" type="reset" name="reset" value="RESET"></div>
+					<div class="form-top">
+						<div class="form-input">
+							<input type="text" id="first-name" name="firstname" placeholder="First Name" required></label>
+							<input type="text" id="last-name" name="lastname" placeholder="Last Name" required></label>
 						</div>
+						<div class="form-input">
+							<input type="tel" id="phone" name="phone" placeholder="Phone Number" required></label>
+							<input type="email" id="email" name="email" placeholder="E-Mail" required></label>
+						</div>
+					</div>
+					<div class="form-bottom">
+						<textarea type="text" id="textarea" name="textarea" placeholder="Write some shit here"></textarea>
+					</div>
+					<div class="form-buttons">
+					    <div onClick="submitForm()"><input type="submit" name="submit" value="SUBMIT"></div>
+					    <div><input type="reset" name="reset" value="RESET"></div>
 					</div>
 				</form>
 			</div>
 		</div>
 
 		</div>
-		<div class="guitar-selected-box guitar-large-image">
+		<div id="zipper-large-image" class="guitar-selected-box guitar-large-image">
 			<img src="media/zipper/zip-2-2.png"/>
 		</div>
 	</div>
@@ -451,11 +393,17 @@
 					<h2>Marquette</h2>
 				</div>
 <!--GUITAR BIO-->
-				<p>Good morning. In less than an hour, aircraft from here will join others from around the world, and you will be launching the largest aerial battle in the history of mankind. [pauses] Mankind. That word should have new meaning for all of us today. We can't be consumed by our petty differences anymore. We will be united in our common interests. Perhaps it's fate that today is the Fourth of July, and you will once again be fighting for our freedom, not from tyranny, oppression, or persecution, but from annihilation. We're fighting for our right to live, to exist. And should we win today, the Fourth of July will no longer be known as an American holiday, but as the day when the world declared in one voice: We will not go quietly into the night! We will not vanish without a fight! We're going to live on! We're going to survive! Today we celebrate our Independence Day!</p>
+				<p class="bump">Solid.<br><br>That was the word in mind when designing the Marquette. I wanted a simple, fundamentally solid guitar with ease of playability. And that’s exactly what the Marquette is. Full, comfortable access up and down the entire fingerboard is achieved with an offset, double-cut body style. The set neck has a full width tenon, hot hide glued into the body to achieve maximum energy transfer between the neck and body. And a wraparound bridge is used to minimize the amount of moving parts on the guitar. Thus, maximizing energy transfer from the strings to the guitar. These fundamental elements paired with Lollar pickups result in a clear, rich, high sustaining instrument.</p>
 <!--SELECT COLOR-->
 			<div class="color-select">
-				<div id="marquette-sunburst-color" class="color-circle start-color"></div>
-				<div id="marquette-midnight-burst-color" class="color-circle"></div>
+				<h3 class="bump">MARQUETTE GALLERY</h3>
+				<div class="select-a-color bump">
+					<label for="color-select">SELECT A COLOR</label>
+					<select id="color-select-marquette">
+						<option value="marquette-1">Sunburst</option>
+						<option value="marquette-2">Midnight Burst</option>
+					</select>
+				</div>
 			</div>
 <!--MARQUETTE GUITAR PHOTO GALLERY - SUNBURST-->
 	<div id="marquette-sunburst-images">
@@ -671,7 +619,7 @@
 		</div>
 	</div>
 <!--SPECS*-->
-		<div class="specs">
+		<div class="specs bump">
 			<h3>MARQUETTE SPECS</h3>
 			<p><span>Center Block Wood </span>Honduran/African Mahogany, Ash, Alder, Walnut, Cedar or Maple. Honestly anything that looks good and will Zip.</p>
 			<p><span>Top and Back Plate Wood </span>complementary wood from the same options. I like to mix. Not always match.</p>
@@ -689,106 +637,41 @@
 			<p><span>Electronics </span>3 way LP style Switchcraft switch</p>
 			<p><span>Two volume pots and a single tone pot.</span></p>
 		</div>
-<!--BUILD YOUR MARQUETTE-->
-		<!--div id="marquette-contact-form" class="contact-form">
-			<h4>BUILD YOUR MARQUETTE</h4>
-			<div id="zipper-white-wood-blue-quote" class="quote-form">
-				<form>
-					<!--ORIENTATION-->
-					<!--div class="form-select-box">
-						<p>ORIENTATION <span>*</span></p>
-						<select>
-							<option value='0'>Righty</option>
-							<option value='0'>Lefty</option>
-						</select>
+<!--ORDER YOUR MARQUETTE-->
+	<!--CONTACT FORM-->
+	<div class="contact-me bump">
+		<h3>INTERESTED IN A MARQUETTE?</h3>
+		<div class="contact-me-form">
+			<p>Want to inquire about ordering a LockHorn Marquette or about available custom options? Please reach out to Zach below and he will be in touch with you!</p>
+			<form>
+				<div class="form-top">
+					<div class="form-input">
+						<input type="text" id="first-name" name="firstname" placeholder="First Name" required></label>
+						<input type="text" id="last-name" name="lastname" placeholder="Last Name" required></label>
 					</div>
-					<!--FRETS-->
-					<!--div class="form-select-box">
-						<p>FRETS <span>*</span></p>
-						<select>
-							<option value='0'>Fretted</option>
-							<option value='0'>Unlined Fretless (Unlined)</option>
-							<option value="50">Lined Fretless [+50]</option>
-						</select>
+					<div class="form-input">
+						<input type="tel" id="phone" name="phone" placeholder="Phone Number" required></label>
+						<input type="email" id="email" name="email" placeholder="E-Mail" required></label>
 					</div>
-					<!--FINGERBOARD WOOD-->
-					<!--div class="form-select-box">
-						<p>FINGERBOARD WOOD <span>*</span></p>
-						<select>
-							<option value='0'>Jatoba</option>
-							<option value='50'>Indian Rosewood [+50] [No International Shipping]</option>
-							<option value='100'>Ebony [+100]</option>
-							<option value='0'>Other [Custom Quote]</option>
-						</select>
-					</div>
-					<!--PICKUP-->
-					<!--div class="form-select-box">
-						<p>PICKUP <span>*</span></p>
-						<select>
-							<option value='0'>Lollar</option>
-							<option value='50'>Not Lollar [+50]</option>
-						</select>
-					</div>
-					<!--FINISH COLOR (BODY AND NECK WILL MATCH UNLESS OTHERWISE SPECIFIED)-->
-					<div class="form-select-box">
-						<p>FINISH COLOR <!--(BODY AND NECK WILL MATCH UNLESS OTHERWISE SPECIFIED)--> <span>*</span></p>
-						<select>
-							<option value='0'>Clear Satin</option>
-							<option value='50'>Red [+50]</option>
-						</select>
-					</div>
-					<!--PICKGUARD (HEAD BADGE WILL MATCH UNLESS OTHERWISE SPECIFIED)-->
-					<div class="form-select-box">
-						<p>PICKGUARD <!--(HEAD BADGE WILL MATCH UNLESS OTHERWISE SPECIFIED)--> <span>*</span></p>
-						<select>
-							<option value='0'>Black</option>
-							<option value='950'>Human Skin [+950]</option>
-						</select>
-					</div>
-					<!--TUNING KEYS-->
-					<div class="form-select-box">
-						<p>TUNING KEYS <span>*</span></p>
-						<select>
-							<option value='0'>Black</option>
-							<option value='950'>Human Bones [+950]</option>
-						</select>
-					</div>
-					<!--SHIPPING-->
-					<div class="form-select-box">
-						<p>SHIPPING <span>*</span></p>
-						<select>
-							<option value='0'>Continental United States</option>
-							<option value='0'>Everywhere Else [Calculated Upon Completion]</option>
-						</select>
-					</div>
-					<!--QUESTIONS, COMMENTS, SPECIAL REQUESTS-->
-					<div class="form-select-box">
-						<p>QUESTIONS, COMMENTS, OR SPECIAL REQUESTS</p>
-						<textarea></textarea>
-					</div>
-					<!--ESTIMATED TOTAL-->
-					<div class="form-select-box estimated-total-box">
-						<p>ESTIMATED TOTAL</p>
-						<div id='zipper-white-wood-blue-contact-form-sum' class="estimated-total-number">$2000</div>
-					</div>
-					<!--SUBMIT BUTTONS-->
-					<div class="form-select-box form-submit-buttons">
-						<div class="form-submit-buttons-box">
-							<div onClick="submitForm()"><input class="submit-buttons" type="submit" name="submit" value="SUBMIT"></div>
-							<div><input class="submit-buttons" type="reset" name="reset" value="RESET"></div>
-						</div>
-					</div>
-				</form>
-			</div>
+				</div>
+				<div class="form-bottom">
+					<textarea type="text" id="textarea" name="textarea" placeholder="Write some shit here"></textarea>
+				</div>
+				<div class="form-buttons">
+				    <div onClick="submitForm()"><input type="submit" name="submit" value="SUBMIT"></div>
+				    <div><input type="reset" name="reset" value="RESET"></div>
+				</div>
+			</form>
 		</div>
-
-		</div>
+	</div>
+</div>
+<!---->
 		<div id="marquette-large-image" class="guitar-selected-box guitar-large-image">
 			<img src="media/marquette/mar-2-2.png"/>
 		</div>
 	</div>
 </div>
-<!--//////////END ZIPPER//////////-->
+<!--//////////END MARQUETTE//////////-->
 
 
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
